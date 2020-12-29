@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz Game - JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Quiz</h1>
+        <p id="instructions">Try to answer the following JavaScript code-related questions within the time limit. Keep in mind
+            that incorrect answers will penalize your time by ten seconds and lower your overall score! </p>
+        <div class="timer">
+            <p>Timer: <span id="timer"></span> seconds</p>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button data-correct="" class="btn" id="Answer1">Answer 1</button>
+                <button data-correct="" class="btn" id="Answer2">Answer 2</button>
+                <button data-correct="" class="btn" id="Answer3">Answer 3</button>
+                <button data-correct="" class="btn" id="Answer4">Answer 4</button>
+
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+        </div>
+        <div id="score" class="hide">
+            <p id="results"></p>
+            <p>Previous High Score: <span id="high-score"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
